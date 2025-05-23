@@ -77,8 +77,8 @@ else:
 tempos["contidototal"] = sum(tempos["contido"])
 tempos["comparatotal"] = sum(tempos["compara"])
 
-print(f"\nCOMPARA\n Tempo total: {tempos['comparatotal'] * 1e6:.3f} µs")
-print(f" Tempo de cada vez em que a funcao foi executada (µs): {[f'{t * 1e6:.0f}' for t in tempos['compara']]}")
+print(f"\nCOMPARA\n Tempo total: {tempos['comparatotal'] * 1e6:.1f} µs")
+print(f" Tempo de cada vez em que a funcao foi executada (µs): {[f'{t * 1e6:.1f}' for t in tempos['compara']]}")
 
 
 print(f"\nCONTIDO\n Partes executadas: {len(tempos['contido'])}")
