@@ -52,7 +52,7 @@ def contido(p, s, inicio, fim):
 
     inicio5 = perf_counter()
 
-    inicio_cruzado = max(meio - len(p) + 1, inicio)
+    inicio_cruzado = max(meio - len(p) + 2, inicio)
     fim_cruzado = meio
     
     for i in range(inicio_cruzado, fim_cruzado + 1):
